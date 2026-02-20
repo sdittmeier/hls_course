@@ -1,6 +1,6 @@
 # FPGA programming with HLS
 
-Welcome to the workspace of the "FPGA programming with HLS" -- course at Heidelberg University, Summer 2026! This repository organizes several components used for FPGA-based acceleration and remote user setup. Each directory focuses on a specific part of the workflow.
+Welcome to the workspace of the "FPGA programming with HLS" course at Heidelberg University, Summer 2026! This repository organizes several components used for FPGA-based acceleration and remote user setup. Each directory focuses on a specific part of the workflow.
 
 ---
 
@@ -30,19 +30,19 @@ hls_course/
 ## 📜 Component Details
 
 
-### 🖥️ [`setup/`](./setup)
-Instructions and scripts to run the toolchain.
-
----
 
 ### 🔧 [`vadd/`](./vadd)
 This folder contains the example project for hardware acceleration using Vitis Unified IDE 2024.2.  
-Includes a multi-part walkthrough:
-- [`part1.md`](./vadd/part1.md): Introduction to Vitis Flow
-- [`part2.md`](./vadd/part2.md): Environment Setup  
-- [`part3.md`](./vadd/part3.md): Code review
-- [`part4.md`](./vadd/part4.md): Creating HLS component  
-- [`part5.md`](./vadd/part5.md): Creating Host and system project
+This repository is split into multiple stages:
+
+- **[Part 1](./vadd/part1.md):** Vitis Flow 101 – Essential Concepts 
+- **[Part 2](./vadd/part2.md):** Environment Setup
+- **[Part 3](./vadd/part3.md):** Review the Kernel Code and Host Application
+- **[Part 4](./vadd/part4.md):** Creating an example HLS component on Vitis Unified, Optimizations & Reviwing reports
+- **[Part 5](./vadd/part5.md):** Creating Application Component and System Project
+
+Each part builds on the previous and is designed to be clear and reproducible.
+
 
 📁 See [vadd/src](./vadd/src) for the actual HLS and host source files.
 

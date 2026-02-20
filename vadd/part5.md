@@ -73,4 +73,6 @@ With `system_project` selected, under **Hardware Emulation**, go to **Run**.
 
 A terminal appears showing execution logs from your host and emulated kernel. Look for **Device[0]:program successful!** and **TEST PASSED** message in the console.
 
-This produces the final `.xclbin` for deployment to the Alveo card.
+### 4. Run the Emulation with Waveform view
+
+Congratulations, you have reached the end of this tutorial! :)
