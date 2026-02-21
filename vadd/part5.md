@@ -69,10 +69,21 @@ Repeat this for Hardware Emulation after running the emulation.
 
 ### 3. Run the Emulation
 
-With `system_project` selected, under **Hardware Emulation**, go to **Run**.
+With `system_project` selected in the Flow menu, under **Hardware Emulation**, go to **Run**.
 
 A terminal appears showing execution logs from your host and emulated kernel. Look for **Device[0]:program successful!** and **TEST PASSED** message in the console.
 
 ### 4. Run the Emulation with Waveform view
+
+Select `launch.json` under **Vitis Explorer > System Project > Settings**. 
+Click on **Search** for the **XRT Config File** and select `$(workspaceFolder)/system_project/system_project_host/runtime/hw_emu_xrt.ini`. 
+![vitis](./images/u17.png)
+Under `Sources`, navigate to the `hw_emu_xrt.ini` file. In `Device Trace`, change the setting of `Device Trace = fine`, and under `Emulation`, select `Debug mode = gui`.
+![vitis](./images/u18.png)
+![vitis](./images/u19.png)
+Next time you **Run** hardware emulation, a new window opens, that shows live the waveform during simulation. This view can be a useful debugging tool when you observe stalls, deadlocks, or misbehaviour in general. 
+![vitis](./images/u20.png)
+
+---
 
 Congratulations, you have reached the end of this tutorial! :)
