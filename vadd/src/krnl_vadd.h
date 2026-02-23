@@ -2,7 +2,6 @@
 #define KRNL_VADD_H
 
 #include <stdint.h>
-#include <hls_stream.h>
 
 #define DATA_SIZE 4096
 
