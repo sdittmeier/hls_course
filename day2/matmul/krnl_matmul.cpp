@@ -1,4 +1,4 @@
-#include krnl_matmul.h
+#include "krnl_matmul.h"
 
 extern "C" {
   void krnl_matmul(

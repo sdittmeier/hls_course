@@ -27,7 +27,7 @@ int main() {
             out[i][j] = 0.0f;
         }
     }
-    }
+    
 
     // 3) Call the HLS kernel
     krnl_matmul(in1, in2, out);
@@ -40,19 +40,20 @@ int main() {
             for (int k = 0; k < MAT_A_COLS; k++) {
                 expected += in1[i][k] * in2[k][j];
             }
-        if (out[i] != expected) {
-            std::cout << "Mismatch at index " << i
-                      << ": expected=" << expected
-                      << ", got=" << out[i] << std::endl;
-            all_ok = false;
-            // If you want to stop on first error, uncomment:
-            // break;
+            if (out[i][j] != expected) {
+                std::cout << "Mismatch at index " << i
+                        << ": expected=" << expected
+                        << ", got=" << out[i] << std::endl;
+                all_ok = false;
+                // If you want to stop on first error, uncomment:
+                // break;
+            }
         }
     }
 
     // 5) Print final PASS/FAIL
     if (all_ok) {
-        std::cout << "=== Test PASSED: All " << DATA_SIZE
+        std::cout << "=== Test PASSED: All " << MAT_A_ROWS*MAT_B_COLS
                   << " results matched ===" << std::endl;
         return EXIT_SUCCESS;
     } else {
