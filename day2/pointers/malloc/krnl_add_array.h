@@ -11,7 +11,7 @@ extern "C" {
   Array Addition Kernel
 
   Arguments:
-    a  (input/output)  --> Input array A 
+    a  (input)  --> Input array A 
     b  (input)  --> Input array B
     c  (output)  --> Output array C (sum of a and b)
     n (input)   --> Number of elements in arrays
