@@ -2,6 +2,7 @@
 #define KRNL_ADD_ARRAY_H
 
 #include <stdint.h>
+#include <cstdlib> 
 
 // -----------------------------------------------------------------------------
 // Top-level kernel prototype

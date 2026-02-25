@@ -39,6 +39,14 @@ int main() {
   }
   fclose(fp);
 
+// Save the golden results to a comparison file
+  fp = fopen("result.golden.dat", "w");
+  fprintf(fp, "%d \n", 1);
+  fprintf(fp, "%d \n", 3);
+  fprintf(fp, "%d \n", 6);
+  fprintf(fp, "%d \n", 10);
+  fclose(fp);
+
   // Compare the results file with the golden results
   retval = system("diff --brief -w result.dat result.golden.dat");
   if (retval != 0) {

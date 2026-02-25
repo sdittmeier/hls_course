@@ -8,15 +8,15 @@
 int main() {
     // 1) Allocate three arrays of length size
     static int size = 128;
-    static uint32_t in1[size];
-    static uint32_t in2[size];
-    static uint32_t out[size];
+    int in1[size];
+    int in2[size];
+    int out[size];
 
     // 2) Initialize input arrays with test values
     //    For example: in1[i] = i, in2[i] = 2*i
     for (int i = 0; i < size; i++) {
-        in1[i] = (uint32_t)i;
-        in2[i] = (uint32_t)(2 * i);
+        in1[i] = (int)i;
+        in2[i] = (int)(2 * i);
         out[i] = 0;  // zero‐initialize output buffer
     }
 
@@ -26,7 +26,7 @@ int main() {
     // 4) Verify results
     bool all_ok = true;
     for (int i = 0; i < size; i++) {
-        uint32_t expected = in1[i] + in2[i];
+        int expected = in1[i] + in2[i];
         if (out[i] != expected) {
             std::cout << "Mismatch at index " << i
                       << ": expected=" << expected

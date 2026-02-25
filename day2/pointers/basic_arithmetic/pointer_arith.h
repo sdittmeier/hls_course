@@ -22,6 +22,8 @@
 
 typedef int dio_t;
 
+extern "C" {
 void pointer_arith(dio_t* d);
+}
 
 #endif

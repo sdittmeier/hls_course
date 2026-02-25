@@ -22,7 +22,7 @@ extern "C" {
     out  (output) --> Output vector
     size (input)  --> Number of elements in vector
 */
-void vadd(uint32_t* in1, uint32_t* in2, uint32_t* out, int size);
+void vadd(const unsigned int *in1, const unsigned int *in2, unsigned int *out, int size);
 
 } 
 

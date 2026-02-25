@@ -129,6 +129,25 @@ The default view shows all of the operations. However, a drop-down menu at the t
 
 ![vitis](./images/u10.png)
 
+## Run the C/RTL Cosimulation
+
+C/RTL Co-simulation verifies that the generated RTL matches the original C/C++ behavior. It runs the C test bench against the synthesized RTL using a simulator and compares the results automatically.
+In the Flow Navigator, click **Run** under **C/RTL COSIMULATION**.
+You can configure this step, e.g. select the RTL language (Verilog or VHDL).
+Also, you can review the waveform by enabling **hls.cosim.wave_debug**.
+If you want more information within this view, change the setting **hls.cosim.trace_level** to **all**.
+
+##  Review the Results
+
+After successful completion:
+* The Run command is marked with a green check.
+* The console reports C/RTL co-simulation finished: PASS.
+* Additional reports become available under the C/RTL Co-simulation section.
+
+If waveform dumping was enabled:
+* The waveform viewer opens automatically.
+* You can inspect signal activity, handshaking, memory interfaces, and timing behavior.
+* You can always come back to reviewing the waveform in the **Wave Viewer** under **REPORTS**.
 
 ### Next Step
 

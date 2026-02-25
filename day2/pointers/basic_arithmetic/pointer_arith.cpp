@@ -18,6 +18,7 @@
 
 extern "C" {
 void pointer_arith(dio_t *d) {
+#pragma HLS INTERFACE m_axi port=d bundle=aximm1 depth=4
   static int acc = 0;
   int i;
 

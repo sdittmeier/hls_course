@@ -1,3 +1,5 @@
+#include "krnl_vadd.h"
+
 extern "C" {
   void vadd(
     const unsigned int *in1, // Read-Only Vector 1
@@ -6,9 +8,9 @@ extern "C" {
     int size                 // Size in integer
   )
   {
-#pragma HLS INTERFACE m_axi port=in1 bundle=aximm1
-#pragma HLS INTERFACE m_axi port=in2 bundle=aximm2
-#pragma HLS INTERFACE m_axi port=out bundle=aximm1
+#pragma HLS INTERFACE m_axi port=in1 bundle=aximm1 depth=DATA_SIZE
+#pragma HLS INTERFACE m_axi port=in2 bundle=aximm2 depth=DATA_SIZE
+#pragma HLS INTERFACE m_axi port=out bundle=aximm1 depth=DATA_SIZE
     for(int i = 0; i < size; ++i)
     {
       out[i] = in1[i] + in2[i];
