@@ -1,61 +1,37 @@
-# FPGA programming with HLS
+# Labs: Performance Optimization with HLS Directives
 
-Welcome to the workspace of the "FPGA programming with HLS" course at Heidelberg University, Summer 2026! This repository organizes several components used for FPGA-based acceleration and remote user setup. Each directory focuses on a specific part of the workflow.
+This part of the lecture builds on your knowledge of Vitis HLS and explores performance optimization techniques including directives/pragmas, improving throughput and latency, and removing bottlenecks.
 
 ---
-
 ## 📂 Project Structure Overview
 ```
-hls_course/
-├── vadd          # Vector addition kernel project with documentation and source
-    └── part1.md          # Introduction to Vitis Flow
-    └── part2.md          # Environment Setup
-    └── part3.md          # Code review
-    └── part4.md          # HLS component steps
-    └── part5.md          # Host and system project
-    └── README.md         # This file
-    └── src/              # Kernel source
-        └── krnl_vadd.cpp       #Kernel source file
-        └── krnl_vadd.h         #Kernel source file
-        └── krnl_vadd_test.cpp  #Kernel testbench file
-        └── vadd.cpp            #OpenCL Host application source file
-        └── vadd.h              #OpenCL Host application source file
-        └── host.cpp            #native XRT Host application source file
-        └── hls_config.cfg      #example configuration file
-├── README.md     # This file
+hls_course/day3/
+├── yuv_filter/               # YUV filter example with performance optimization
+├── README.md                 # This file
 ```
 
 ---
-
 ## 📜 Component Details
 
+### 🔧 [`yuv_filter/`](./yuv_filter)
+This folder contains an example project demonstrating performance optimization techniques in Vitis HLS, including:
+- Use of HLS directives and pragmas for optimization
+- Throughput and latency improvements
+- Bottleneck identification and removal
 
+Each component builds on the previous and is designed to be clear and reproducible.
 
-### 🔧 [`vadd/`](./vadd)
-This folder contains the example project for hardware acceleration using Vitis Unified IDE 2024.2.  
-This repository is split into multiple stages:
-
-- **[Part 1](./vadd/part1.md):** Vitis Flow 101 – Essential Concepts 
-- **[Part 2](./vadd/part2.md):** Environment Setup
-- **[Part 3](./vadd/part3.md):** Review the Kernel Code and Host Application
-- **[Part 4](./vadd/part4.md):** Creating an example HLS component on Vitis Unified, Optimizations & Reviwing reports
-- **[Part 5](./vadd/part5.md):** Creating Application Component and System Project
-
-Each part builds on the previous and is designed to be clear and reproducible.
-
-
-📁 See [vadd/src](./vadd/src) for the actual HLS and host source files.
+📁 See the [yuv_filter/](./yuv_filter) folder for the actual HLS source files.
 
 ---
-
 ## 🚀 Quick Start
 
-Start by following [part1.md](vadd/part1.md) to set up your environment and clone the repository.
+Start by exploring the performance optimization example:
+1. [yuv_filter/](./yuv_filter) - For YUV filter with performance optimization techniques
 
-From there, proceed to part2.md and part3.md and so on in order.
+The example demonstrates various HLS directives and pragmas that can be used to improve kernel performance.
 
 ---
-
 ## 🛠️ Requirements
 - Ubuntu 20.04 or later or Windows (lab machines / ssh connection)
 - Vitis Unified IDE 2025.2 or other version
@@ -63,7 +39,6 @@ From there, proceed to part2.md and part3.md and so on in order.
 - XRT installed and configured
 
 ---
-
 ## 🔗 Related Repositories
 
 - [Click here for Vitis Getting Started document](https://docs.amd.com/r/en-US/Vitis-Tutorials-Getting-Started/Vitis-Tutorials-Getting-Started-XD098)

@@ -9,9 +9,9 @@ Welcome to the workspace of the "FPGA programming with HLS" course at Heidelberg
 hls_course/
 ├── day1          # Tutorial: Getting started with HLS
 ├── day2          # Labs: Matrix Multiplication, Pointers, and Streams
-├── day3          # Labs:
-├── day4          # Labs:
-├── day5          # Labs:
+├── day3          # Labs: Performance Optimization with HLS Directives
+├── day4          # Labs: Advanced HLS Techniques and Optimization
+├── day5          # Labs: System Integration and Deployment
 ├── README.md     # This file
 ```
 
