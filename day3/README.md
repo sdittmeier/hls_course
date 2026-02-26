@@ -1,6 +1,6 @@
 # Labs: Performance Optimization with HLS Directives
 
-This part of the lecture builds on your knowledge of Vitis HLS and explores performance optimization techniques including directives/pragmas, improving throughput and latency, and removing bottlenecks.
+This part of the lecture builds on your knowledge of Vitis HLS and explores performance optimization techniques including directives/pragmas, improving throughput and latency.
 
 ---
 ## 📂 Project Structure Overview
@@ -17,11 +17,9 @@ hls_course/day3/
 This folder contains an example project demonstrating performance optimization techniques in Vitis HLS, including:
 - Use of HLS directives and pragmas for optimization
 - Throughput and latency improvements
-- Bottleneck identification and removal
-
-Each component builds on the previous and is designed to be clear and reproducible.
 
 📁 See the [yuv_filter/](./yuv_filter) folder for the actual HLS source files.
+Here, you also get detailed instructions for this lab. 
 
 **Important Notes:**
 - When setting up the testbench, you must add both `yuv_filter_test.cpp` and `image_aux.cpp` to the testbench source files
