@@ -37,7 +37,6 @@ void dct_1d(dct_data_t src[DCT_SIZE], dct_data_t dst[DCT_SIZE])
 
 DCT_Outer_Loop:
    for (k = 0; k < DCT_SIZE; k++) {
-      #pragma HLS pipeline 
 DCT_Inner_Loop:
       for(n = 0, tmp = 0; n < DCT_SIZE; n++) {
          int coeff = (int)dct_coeff_table[k][n];
@@ -50,11 +49,8 @@ DCT_Inner_Loop:
 void dct_2d(dct_data_t in_block[DCT_SIZE][DCT_SIZE],
       dct_data_t out_block[DCT_SIZE][DCT_SIZE])
 {
-   #pragma HLS inline
    dct_data_t row_outbuf[DCT_SIZE][DCT_SIZE];
    dct_data_t col_outbuf[DCT_SIZE][DCT_SIZE], col_inbuf[DCT_SIZE][DCT_SIZE];
-   #pragma HLS ARRAY_PARTITION variable=col_inbuf complete dim=2
-   
    unsigned i, j;
 
    // DCT rows
@@ -67,7 +63,6 @@ Xpose_Row_Outer_Loop:
    for (j = 0; j < DCT_SIZE; j++)
 Xpose_Row_Inner_Loop:
       for(i = 0; i < DCT_SIZE; i++)
-         #pragma HLS pipeline 
          col_inbuf[j][i] = row_outbuf[i][j];
    // DCT columns
 Col_DCT_Loop:
@@ -79,7 +74,6 @@ Xpose_Col_Outer_Loop:
    for (j = 0; j < DCT_SIZE; j++)
 Xpose_Col_Inner_Loop:
       for(i = 0; i < DCT_SIZE; i++)
-         #pragma HLS pipeline 
          out_block[j][i] = col_outbuf[i][j];
 }
 
@@ -91,7 +85,6 @@ RD_Loop_Row:
    for (r = 0; r < DCT_SIZE; r++) {
 RD_Loop_Col:
       for (c = 0; c < DCT_SIZE; c++)
-         #pragma HLS pipeline 
          buf[r][c] = input[r * DCT_SIZE + c];
    }
 }
@@ -104,7 +97,6 @@ WR_Loop_Row:
    for (r = 0; r < DCT_SIZE; r++) {
 WR_Loop_Col:
       for (c = 0; c < DCT_SIZE; c++)
-         #pragma HLS pipeline 
          output[r * DCT_SIZE + c] = buf[r][c];
    }
 }
@@ -114,9 +106,8 @@ void dct(short input[N], short output[N])
 {
 
    short buf_2d_in[DCT_SIZE][DCT_SIZE];
-   #pragma HLS ARRAY_PARTITION variable=buf_2d_in complete dim=2
    short buf_2d_out[DCT_SIZE][DCT_SIZE];
-   #pragma HLS dataflow
+
    // Read input data. Fill the internal buffer.
    read_data(input, buf_2d_in);
 
@@ -126,4 +117,3 @@ void dct(short input[N], short output[N])
    write_data(buf_2d_out, output);
 }
 }
-
