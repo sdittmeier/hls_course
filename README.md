@@ -32,8 +32,12 @@ You start at [day1](./day1/README.md), which introduces you to the Vitis HLS too
 
 ## 🔗 Related Repositories
 
-- [Click here for Vitis Getting Started document](https://docs.amd.com/r/en-US/Vitis-Tutorials-Getting-Started/Vitis-Tutorials-Getting-Started-XD098)
+- [Click here for Vitis Getting Started document](https://docs.amd.com/r/en-US/Vitis-Tutorials-Getting-Started)
+- [Click here for Vitis High-Level Synthesis User Guide](https://docs.amd.com/r/en-US/ug1399-vitis-hls/)
 - [Click here for Vitis HLS Tutorials](https://xilinx.github.io/Vitis-Tutorials/2022-1/build/html/docs/Getting_Started/Vitis_HLS/Getting_Started_Vitis_HLS.html)
+- [Click here for Vitis HLS Introductory Examples](https://github.com/Xilinx/Vitis-HLS-Introductory-Examples)
+- [Click here for Vitis Data Center Acceleration Examples](https://github.com/Xilinx/Vitis_Accel_Examples)
+- [Click here for High-Level-Synthesis Design Flow on ZYNQ](https://xilinx.github.io/xup_high_level_synthesis_design_flow/index.html)
 - [Click here for Vitis Software Installation](https://docs.amd.com/r/en-US/ug1400-vitis-embedded/Vitis-Software-Platform-Installation)
 - [Click here for XRT and Deployment Platform Installation Procedures on RedHat and CentOS](https://docs.amd.com/r/en-US/ug1301-getting-started-guide-alveo-accelerator-cards/XRT-and-Deployment-Platform-Installation-Procedures-on-RedHat-and-CentOS)
 
