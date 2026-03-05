@@ -11,7 +11,7 @@ hls_course/
 ├── day2          # Labs: Matrix Multiplication, Pointers, and Streams
 ├── day3          # Labs: Performance Optimization with HLS Directives
 ├── day4          # Labs: Advanced HLS Techniques and Optimization
-├── day5          # Labs: System Integration and Deployment
+├── day5          # Labs: Free running kernel, fixing initiation intervals and timing
 ├── README.md     # This file
 ```
 
@@ -30,7 +30,7 @@ You start at [day1](./day1/README.md), which introduces you to the Vitis HLS too
 
 ---
 
-## 🔗 Related Repositories
+## 🔗 Related Repositories, Documentation, Tutorials and User Guides
 
 - [Click here for Vitis Getting Started document](https://docs.amd.com/r/en-US/Vitis-Tutorials-Getting-Started)
 - [Click here for Vitis High-Level Synthesis User Guide](https://docs.amd.com/r/en-US/ug1399-vitis-hls/)

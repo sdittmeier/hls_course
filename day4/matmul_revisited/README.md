@@ -29,6 +29,7 @@ This design necessitates substantial time to complete a single computation! The 
 | Baseline | 4734979 | 1%   | 5%     | 2%  | 4%  | 0%   |
 
 Your numbers for the U55C will be different --> note them down! We do want to do the same optimization now for this board.
+Follow the next steps and adapt your code accordingly to optimize the implementation. 
 
 ### 1.1 Data Access Optimization
 
