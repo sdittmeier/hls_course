@@ -11,7 +11,7 @@ hls_course/
 ├── day2          # Labs: Matrix Multiplication, Pointers, and Streams
 ├── day3          # Labs: Performance Optimization with HLS Directives
 ├── day4          # Labs: Advanced HLS Techniques and Optimization
-├── day5          # Labs: Free running kernel, fixing initiation intervals and timing
+├── day5          # Labs: Free running kernel and fixing initiation intervals
 ├── README.md     # This file
 ```
 
