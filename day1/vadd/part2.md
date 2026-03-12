@@ -39,7 +39,7 @@ You want to add the following lines to your `~/.bashrc`
 export XILINXD_LICENSE_FILE=REPLACE_WITH_PORT_GIVEN_IN_LECTURE
 export XILINX_PATH=/mnt/data1/xilinx
 export XILINX_VERSION=2025.2
-export PLATFORM_REPO_PATHS=/opt/xilinx/platforms/platforms
+export PLATFORM_REPO_PATHS=/opt/xilinx/platforms
 
 source $XILINX_PATH/$XILINX_VERSION/Vitis/settings64.sh
 source /opt/xilinx/xrt/setup.sh
