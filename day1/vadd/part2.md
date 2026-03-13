@@ -10,6 +10,10 @@ Open a terminal and connect via SSH with **X11 forwarding**.
 ```bash
 ssh -Y your_username@curvaton.physi.uni-heidelberg.de
 ```
+To connect from eduroam, use
+```bash
+ssh -Y your_username@147.142.19.37
+```
 ## for Mac users
 1. Install XQuartz (the X11 server for macOS):
     - Download from: https://www.xquartz.org
@@ -21,7 +25,10 @@ ssh -Y your_username@curvaton.physi.uni-heidelberg.de
 ssh -Y your_username@curvaton.physi.uni-heidelberg.de
 ```
 >⚠️ The -Y option is recommended for macOS because many GUI applications (like Vitis) require trusted X11 forwarding.
-
+To connect from eduroam, use
+```bash
+ssh -Y your_username@147.142.19.37
+```
 ## for Windows users
 1. Download and install [MobaXterm](https://mobaxterm.mobatek.net).
 2. Open MobaXterm → Start local terminal.
