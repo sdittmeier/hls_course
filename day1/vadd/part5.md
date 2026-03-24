@@ -7,7 +7,7 @@ The Application component is an application that runs on the processor, Arm or x
 1. From the main menu select **File > New Component > Application**
 2. Enter the **Component name** as `host`, and the **Component location** as the workspace (default), then click **Next**.
 3. On the *Select Platform* page, choose the `xilinx_u55c_gen3x16_xdma_3_202210_1` platform.
-4. Click the **Add Files** icon and import `vadd.cpp` and `vadd.h` from `<downloaded_git_repo_path>/AHEAD/AHEAD_2025/vadd/src/`
+4. Click the **Add Files** icon and import `vadd.cpp` and `vadd.h` from `<downloaded_git_repo_path>/day1/vadd/src/`
 5. Review the *Summary* page and click **Finish**.
 6. Once imported, select `vadd.cpp` in the Component Explorer to view it in the Code Editor.
 7. Click **Build** to compile for X86 Simulation or Hardware.
